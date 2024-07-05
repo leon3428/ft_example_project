@@ -1,6 +1,6 @@
 [
     {
-        "id": "100c736d7f418c4d",
+        "id": "3e1e0477eef0f073",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "f80123a5eaea11b7",
+        "id": "be12e55a1e382662",
         "type": "inject",
-        "z": "100c736d7f418c4d",
+        "z": "3e1e0477eef0f073",
         "name": "",
         "props": [
             {
@@ -24,18 +24,18 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 830,
-        "y": 140,
+        "y": 220,
         "wires": [
             [
-                "58260422aa611dd6"
+                "049cc1cf4a054a76"
             ]
         ]
     },
     {
-        "id": "58260422aa611dd6",
+        "id": "049cc1cf4a054a76",
         "type": "exec",
-        "z": "100c736d7f418c4d",
-        "command": "chown root:root /opt/ft/root",
+        "z": "3e1e0477eef0f073",
+        "command": "/opt/ft/install_opencv.sh",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -44,55 +44,33 @@
         "oldrc": false,
         "name": "",
         "x": 1150,
-        "y": 140,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "42f4ddd42c16b1c6",
-        "type": "inject",
-        "z": "100c736d7f418c4d",
-        "name": "",
-        "props": [
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 830,
         "y": 220,
         "wires": [
             [
-                "57fd3d1ce7ee526f"
+                "bb68e777b5e4fc5b"
+            ],
+            [
+                "bb68e777b5e4fc5b"
+            ],
+            [
+                "bb68e777b5e4fc5b"
             ]
         ]
     },
     {
-        "id": "57fd3d1ce7ee526f",
-        "type": "exec",
-        "z": "100c736d7f418c4d",
-        "command": "chmod +s /opt/ft/root",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 1140,
+        "id": "bb68e777b5e4fc5b",
+        "type": "debug",
+        "z": "3e1e0477eef0f073",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
         "y": 220,
-        "wires": [
-            [],
-            [],
-            []
-        ]
+        "wires": []
     }
 ]
