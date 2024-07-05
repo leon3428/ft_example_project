@@ -1,0 +1,98 @@
+[
+    {
+        "id": "100c736d7f418c4d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f80123a5eaea11b7",
+        "type": "inject",
+        "z": "100c736d7f418c4d",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 830,
+        "y": 140,
+        "wires": [
+            [
+                "58260422aa611dd6"
+            ]
+        ]
+    },
+    {
+        "id": "58260422aa611dd6",
+        "type": "exec",
+        "z": "100c736d7f418c4d",
+        "command": "chown root:root /opt/ft/root",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1150,
+        "y": 140,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "42f4ddd42c16b1c6",
+        "type": "inject",
+        "z": "100c736d7f418c4d",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 830,
+        "y": 220,
+        "wires": [
+            [
+                "57fd3d1ce7ee526f"
+            ]
+        ]
+    },
+    {
+        "id": "57fd3d1ce7ee526f",
+        "type": "exec",
+        "z": "100c736d7f418c4d",
+        "command": "chmod +s /opt/ft/root",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1140,
+        "y": 220,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    }
+]
