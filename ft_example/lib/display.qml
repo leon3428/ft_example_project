@@ -11,4 +11,17 @@ TXTWindow {
     color: "grey"
     anchors.fill: parent
   }
+  TXTButton {
+    id: record
+    text: "record"
+    font.pixelSize: 22
+    font.bold: false
+    font.italic: false
+    font.underline: false
+    enabled: true
+    x: 60
+    y: 182
+    width: 100
+    height: 40
+  }
 }
